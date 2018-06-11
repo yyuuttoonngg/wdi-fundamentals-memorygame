@@ -41,9 +41,9 @@ var flipCard = function(){
 var checkForMatch = function(){
 	if(cardsInPlay.length ===2) {
 	  if (cardsInPlay[0]===cardsInPlay[1]) {
-	     alert("You found a match!");
+	  	setTimeout(function(){ alert("You found a match!"); }, 100);
 	  } else
-	     alert("Sorry, try again");
+	     setTimeout(function(){ alert("Sorry, try again"); }, 100);
 	}
 };
 
@@ -59,6 +59,9 @@ var createBoard = function(){
 };
 
 //reset game
+var restart =function() {
+	location.href = ""
+}
 
 
 createBoard();
